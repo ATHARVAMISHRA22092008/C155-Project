@@ -29,7 +29,8 @@ AFRAME.registerComponent("flying-birds", {
             
       birdEl.setAttribute("gltf-model", "./assets/models/fish/scene.gltf");
       birdEl.setAttribute("scale", "25 25 25");
-      birdEl.setAttribute("rotation", {x: 180, y:-90, z:0});   
+      birdEl.setAttribute("rotation", {x: 180, y:-90, z:0});
+      birdEl.setAttribute("static-body");  
   
       terrainEl.appendChild(birdEl);
     }
