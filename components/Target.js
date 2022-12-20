@@ -28,7 +28,8 @@ AFRAME.registerComponent("target-ring", {
     ringEl.setAttribute("position",position);
     ringEl.setAttribute("gltf-model", "./assets/models/roman_coin/scene.gltf");
     ringEl.setAttribute("scale", {x: 50, y: 50, z: 50})
-    ringEl.setAttribute("rotation", {x: 90, y: 0, z: 0})  
+    ringEl.setAttribute("rotation", {x: 90, y: 0, z: 0})
+    ringEl.setAttribute("static-body")  
 
     terrainEl.appendChild(ringEl);
   }
